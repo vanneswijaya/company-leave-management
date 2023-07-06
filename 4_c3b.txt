@@ -1,0 +1,14 @@
+startNewDay|01-Jan-2022
+
+hire|Bob|30
+hire|Mary|20
+hire|Joe|20
+
+setupTeam|A|Bob
+setupTeam|B|Bob
+setupTeam|C|Bob
+addTeamMember|A|Mary 
+addTeamMember|B|Joe 
+
+takeLeave|Bob|AL|3-Jan-2022|4-Jan-2022|A|Mary|B|Joe
+listLeaves

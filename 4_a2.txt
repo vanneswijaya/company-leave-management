@@ -1,0 +1,18 @@
+startNewDay|01-Jan-2022
+
+hire|Bob|30
+hire|Tim|20
+hire|Ada|20
+hire|Carol|20
+
+setupTeam|Sales Team|Bob 
+setupTeam|Production Team|Bob
+
+addTeamMember|Sales Team|Tim
+addTeamMember|Sales Team|Ada
+addTeamMember|Production Team|Carol
+ 
+takeLeave|Bob|AL|14-Jan-2022|18-Jan-2022|Production Team|Carol|Sales Team|Tim
+takeLeave|Bob|AL|02-Jan-2022|04-Jan-2022|Production Team|Carol|Sales Team|Ada
+listLeaves
+listTeamMembers

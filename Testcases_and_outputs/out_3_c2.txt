@@ -1,0 +1,122 @@
+Please input the file pathname: 3_c2.txt
+
+> startNewDay|01-Jan-2022
+
+> hire|Carol|20
+Done.
+
+> takeLeave|Carol|AL|01-Jan-2022|06-Jan-2022
+Done.
+
+> takeLeave|Carol|AL|11-Jan-2022|16-Jan-2022
+Done.
+
+> takeLeave|Carol|AL|21-Jan-2022|22-Jan-2022
+The annual leave is invalid.        
+The current balance is 8 days only. 
+The employee has not taken any block leave yet.
+The employee can take at most 1 days of non-block annual leave
+because of the need to reserve 7 days for a block leave.
+
+> takeLeave|Carol|AL|21-Jan-2022|21-Jan-2022
+Done.
+
+> takeLeave|Carol|AL|22-Jan-2022|22-Jan-2022
+The annual leave is invalid.        
+The current balance is 7 days only. 
+The employee has not taken any block leave yet.
+The employee can take at most 0 days of non-block annual leave
+because of the need to reserve 7 days for a block leave.
+
+> listLeaves
+Carol:
+1-Jan-2022 to 6-Jan-2022 [AL]       
+11-Jan-2022 to 16-Jan-2022 [AL]     
+21-Jan-2022 to 21-Jan-2022 [AL]     
+
+> takeLeave|Carol|BL|01-Feb-2022|08-Feb-2022
+Insufficient balance of annual leaves. 7 days left only!
+
+> takeLeave|Carol|BL|01-Feb-2022|07-Feb-2022
+Done.
+
+> listLeaves
+Carol:
+1-Jan-2022 to 6-Jan-2022 [AL]       
+11-Jan-2022 to 16-Jan-2022 [AL]     
+21-Jan-2022 to 21-Jan-2022 [AL]     
+1-Feb-2022 to 7-Feb-2022 [BL]       
+
+> undo
+
+> takeLeave|Carol|AL|01-Mar-2022|01-Mar-2022
+The annual leave is invalid.        
+The current balance is 7 days only. 
+The employee has not taken any block leave yet.
+The employee can take at most 0 days of non-block annual leave
+because of the need to reserve 7 days for a block leave.
+
+> hire|Grace|20
+Done.
+
+> takeLeave|Grace|BL|01-Jan-2022|07-Jan-2022
+Done.
+
+> takeLeave|Grace|AL|11-Jan-2022|16-Jan-2022
+Done.
+
+> takeLeave|Grace|AL|21-Jan-2022|22-Jan-2022
+Done.
+
+> takeLeave|Grace|AL|23-Jan-2022|28-Jan-2022
+Insufficient balance of annual leaves. 5 days left only!
+
+> takeLeave|Grace|AL|23-Jan-2022|27-Jan-2022
+Done.
+
+> listLeaves|Grace
+1-Jan-2022 to 7-Jan-2022 [BL]       
+11-Jan-2022 to 16-Jan-2022 [AL]     
+21-Jan-2022 to 22-Jan-2022 [AL]     
+23-Jan-2022 to 27-Jan-2022 [AL]     
+
+> hire|Bob|15
+Done.
+
+> takeLeave|Bob|BL|01-Jan-2022|07-Jan-2022
+Done.
+
+> takeLeave|Bob|AL|11-Jan-2022|11-Jan-2022
+Done.
+
+> takeLeave|Bob|BL|21-Jan-2022|28-Jan-2022
+Insufficient balance of annual leaves. 7 days left only!
+
+> takeLeave|Bob|BL|21-Jan-2022|27-Jan-2022
+Done.
+
+> listLeaves|Bob
+1-Jan-2022 to 7-Jan-2022 [BL]       
+11-Jan-2022 to 11-Jan-2022 [AL]     
+21-Jan-2022 to 27-Jan-2022 [BL]     
+
+> undo
+
+> undo
+
+> takeLeave|Bob|BL|21-Jan-2022|28-Jan-2022
+Done.
+
+> listLeaves
+Bob:
+1-Jan-2022 to 7-Jan-2022 [BL]       
+21-Jan-2022 to 28-Jan-2022 [BL]     
+Carol:
+1-Jan-2022 to 6-Jan-2022 [AL]       
+11-Jan-2022 to 16-Jan-2022 [AL]     
+21-Jan-2022 to 21-Jan-2022 [AL]     
+Grace:
+1-Jan-2022 to 7-Jan-2022 [BL]       
+11-Jan-2022 to 16-Jan-2022 [AL]     
+21-Jan-2022 to 22-Jan-2022 [AL]     
+23-Jan-2022 to 27-Jan-2022 [AL] 

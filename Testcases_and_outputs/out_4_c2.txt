@@ -1,0 +1,96 @@
+Please input the file pathname: 4_c2.txt
+
+> startNewDay|01-Jan-2022
+
+> hire|Bob|30
+Done.
+
+> hire|John|30
+Done.
+
+> hire|May|20
+Done.
+
+> hire|Ann|20
+Done.
+
+> setupTeam|Production Team|Bob
+Done.
+
+> setupTeam|Sales Team|Bob
+Done.
+
+> addTeamMember|Production Team|John
+Done.
+
+> addTeamMember|Sales Team|May
+Done.
+
+> addTeamMember|Sales Team|Ann
+Done.
+
+> takeLeave|Bob|AL|3-Jan-2022|4-Jan-2022|Production Team|John
+Missing input:  Please give the name of the acting head for Sales Team
+
+> takeLeave|Bob|AL|3-Jan-2022|4-Jan-2022|Sales Team|May
+Missing input:  Please give the name of the acting head for Production Team
+
+> takeLeave|Bob|AL|3-Jan-2022|4-Jan-2022|Production Team|John|Sales Team|Mandy
+Employee (Mandy) not found for Sales Team!
+
+> takeLeave|Bob|AL|3-Jan-2022|4-Jan-2022|Production Team|John|Sales Team|John
+Employee (John) not found for Sales Team!
+
+> listTeamMembers
+Production Team:
+Bob (Head of Team)
+John
+
+Sales Team:
+Ann
+Bob (Head of Team)
+May
+
+
+> takeLeave|Bob|BL|3-Jan-2022|9-Jan-2022|Production Team|John|Sales Team|May
+Done.
+
+> takeLeave|Ann|AL|3-Jan-2022|4-Jan-2022
+Done.
+
+> takeLeave|May|AL|3-Jan-2022|4-Jan-2022
+Cannot take leave.  May is the acting head of Sales Team during 3-Jan-2022 to 9-Jan-2022!
+
+> takeLeave|John|AL|8-Jan-2022|9-Jan-2022
+Cannot take leave.  John is the acting head of Production Team during 3-Jan-2022 to 9-Jan-2022!
+
+> takeLeave|May|AL|3-Feb-2022|4-Feb-2022
+Done.
+
+> takeLeave|John|AL|1-Jan-2022|2-Jan-2022
+Done.
+
+> listTeamMembers
+Production Team:
+Bob (Head of Team)
+John
+Acting heads:
+3-Jan-2022 to 9-Jan-2022: John
+
+Sales Team:
+Ann
+Bob (Head of Team)
+May
+Acting heads:
+3-Jan-2022 to 9-Jan-2022: May
+
+
+> listLeaves
+Ann:
+3-Jan-2022 to 4-Jan-2022 [AL]
+Bob:
+3-Jan-2022 to 9-Jan-2022 [BL]
+John:
+1-Jan-2022 to 2-Jan-2022 [AL]
+May:
+3-Feb-2022 to 4-Feb-2022 [AL]

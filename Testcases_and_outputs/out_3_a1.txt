@@ -1,0 +1,32 @@
+Please input the file pathname: 3_a1.txt
+
+> startNewDay|01-Jan-2022
+
+> hire|Bob|30
+Done.
+
+> hire|Carol|20
+Done.
+
+> takeLeave|Bob|BL|02-Jan-2022|08-Jan-2022
+Done.
+
+> takeLeave|Carol|AL|03-Jan-2022|08-Jan-2022
+Done.
+
+> takeLeave|Carol|SL|02-Mar-2022|02-Mar-2022
+Done.
+
+> listLeaves|Bob
+2-Jan-2022 to 8-Jan-2022 [BL]
+
+> listLeaves|Carol
+3-Jan-2022 to 8-Jan-2022 [AL]
+2-Mar-2022 to 2-Mar-2022 [SL]
+
+> listLeaves
+Bob:
+2-Jan-2022 to 8-Jan-2022 [BL]
+Carol:
+3-Jan-2022 to 8-Jan-2022 [AL]
+2-Mar-2022 to 2-Mar-2022 [SL]

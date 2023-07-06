@@ -1,0 +1,151 @@
+Please input the file pathname: 3_c1.txt
+
+> startNewDay|01-Jan-2022
+
+> hire|Jimmy|60
+Done.
+
+> takeLeave|Jimmy|BL|02-Jan-2022|08-Jan-2022
+Done.
+
+> takeLeave|Jimmy|SL|02-Mar-2022|09-Mar-2022    
+Done.
+
+> listLeaves
+Jimmy:
+2-Jan-2022 to 8-Jan-2022 [BL]
+2-Mar-2022 to 9-Mar-2022 [SL]
+
+> takeLeave|Jimmy|NL|08-Mar-2022|10-Mar-2022    
+Leave overlapped: The leave period 2-Mar-2022 to 9-Mar-2022 [SL] is found!
+
+> takeLeave|Jimmy|AL|01-Mar-2022|03-Mar-2022    
+Leave overlapped: The leave period 2-Mar-2022 to 9-Mar-2022 [SL] is found!
+
+> takeLeave|Jimmy|BL|01-Mar-2022|10-Mar-2022    
+Leave overlapped: The leave period 2-Mar-2022 to 9-Mar-2022 [SL] is found!
+
+> takeLeave|Jimmy|SL|03-Mar-2022|06-Mar-2022    
+Leave overlapped: The leave period 2-Mar-2022 to 9-Mar-2022 [SL] is found!
+
+> takeLeave|Jimmy|NL|02-Apr-2022|10-Apr-2022    
+Done.
+
+> startNewDay|10-Feb-2022
+Done.
+
+> takeLeave|Jimmy|AL|02-Feb-2022|03-Feb-2022    
+Wrong Date. Leave start date must not be earlier than the system date (10-Feb-2022)!
+
+> listLeaves
+Jimmy:
+2-Jan-2022 to 8-Jan-2022 [BL]
+2-Mar-2022 to 9-Mar-2022 [SL]
+2-Apr-2022 to 10-Apr-2022 [NL]
+
+> undo
+
+> takeLeave|Jimmy|NL|02-Feb-2022|03-Feb-2022    
+Done.
+
+> listLeaves
+Jimmy:
+2-Jan-2022 to 8-Jan-2022 [BL]
+2-Feb-2022 to 3-Feb-2022 [NL]
+2-Mar-2022 to 9-Mar-2022 [SL]
+2-Apr-2022 to 10-Apr-2022 [NL]
+
+> redo
+Nothing to redo.
+
+> undo
+
+> takeLeave|Jimmy|AL|01-Jan-2022|01-Jan-2022    
+Done.
+
+> listLeaves
+Jimmy:
+1-Jan-2022 to 1-Jan-2022 [AL]
+2-Jan-2022 to 8-Jan-2022 [BL]
+2-Mar-2022 to 9-Mar-2022 [SL]
+2-Apr-2022 to 10-Apr-2022 [NL]
+
+> hire|Grace|25
+Done.
+
+> takeLeave|Grace|AL|01-Jan-2022|09-Jan-2022    
+To apply annual leave for 7 days or more, please use the Block Leave (BL) type.
+
+> takeLeave|Grace|BL|01-Feb-2022|06-Feb-2022    
+To apply annual leave for 6 days or less, you should use the normal Annual Leave (AL) type.
+
+> takeLeave|Grace|BL|01-Jan-2022|09-Jan-2022    
+Done.
+
+> takeLeave|Grace|AL|01-Feb-2022|06-Feb-2022    
+Done.
+
+> listLeaves|Grace
+1-Jan-2022 to 9-Jan-2022 [BL]
+1-Feb-2022 to 6-Feb-2022 [AL]
+
+> hire|Carol|20
+Done.
+
+> takeLeave|Carol|BL|02-Jan-2022|08-Jan-2022    
+Done.
+
+> takeLeave|Carol|BL|02-Mar-2022|09-Mar-2022    
+Done.
+
+> listLeaves|Carol
+2-Jan-2022 to 8-Jan-2022 [BL]
+2-Mar-2022 to 9-Mar-2022 [BL]
+
+> takeLeave|Carol|AL|12-Jan-2022|14-Jan-2022    
+Done.
+
+> takeLeave|Carol|BL|15-Jan-2022|25-Jan-2022    
+Insufficient balance of annual leaves. 2 days left only!
+
+> listLeaves|Carol
+2-Jan-2022 to 8-Jan-2022 [BL]
+12-Jan-2022 to 14-Jan-2022 [AL]
+2-Mar-2022 to 9-Mar-2022 [BL]
+
+> takeLeave|Carol|NL|15-Feb-2022|15-Feb-2022    
+Done.
+
+> takeLeave|Carol|NL|16-Feb-2022|25-Feb-2022    
+Done.
+
+> takeLeave|Carol|SL|21-Mar-2022|24-Mar-2022    
+Done.
+
+> takeLeave|Carol|SL|25-Mar-2022|30-Mar-2022    
+Done.
+
+> takeLeave|Carol|SL|01-Apr-2022|04-Aug-2022    
+Insufficient balance of sick leaves. 125 days left only!
+
+> takeLeave|Carol|SL|01-Apr-2022|03-Aug-2022    
+Done.
+
+> listLeaves
+Carol:
+2-Jan-2022 to 8-Jan-2022 [BL]
+12-Jan-2022 to 14-Jan-2022 [AL]
+15-Feb-2022 to 15-Feb-2022 [NL]
+16-Feb-2022 to 25-Feb-2022 [NL]
+2-Mar-2022 to 9-Mar-2022 [BL]
+21-Mar-2022 to 24-Mar-2022 [SL]
+25-Mar-2022 to 30-Mar-2022 [SL]
+1-Apr-2022 to 3-Aug-2022 [SL]
+Grace:
+1-Jan-2022 to 9-Jan-2022 [BL]
+1-Feb-2022 to 6-Feb-2022 [AL]
+Jimmy:
+1-Jan-2022 to 1-Jan-2022 [AL]
+2-Jan-2022 to 8-Jan-2022 [BL]
+2-Mar-2022 to 9-Mar-2022 [SL]
+2-Apr-2022 to 10-Apr-2022 [NL]

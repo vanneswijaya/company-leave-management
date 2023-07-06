@@ -1,0 +1,28 @@
+Commands: 
+=========
+"hire"
+"setupTeam"
+"listEmployees"
+"listTeams"
+"startNewDay"
+"undo"
+"redo"
+
+Heading and listing
+===================
+"%s (Entitled Annual Leaves: %d days)\n"
+"%-30s%-10s%-13s\n", "Team Name", "Leader", "Setup Date"
+
+
+Exception Handling
+==================
+"Insufficient command arguments!"
+"Employee already exists!"
+
+"Team already exists!"
+"Employee not found!"
+
+Others
+======
+"Please input the file pathname: "
+"Unknown command"

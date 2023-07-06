@@ -1,0 +1,31 @@
+Please input the file pathname: 4_a1.txt
+
+> startNewDay|01-Jan-2022
+
+> hire|Bob|30
+Done.
+
+> hire|John|30
+Done.
+
+> setupTeam|Customer Relationship Team|Bob
+Done.
+
+> addTeamMember|Customer Relationship Team|John
+Done.
+
+> setupTeam|Production Team|John
+Done.
+
+> takeLeave|Bob|BL|12-Jan-2022|18-Jan-2022|Customer Relationship Team|John
+Done.
+
+> listTeamMembers
+Customer Relationship Team:
+Bob (Head of Team)
+John
+Acting heads:
+12-Jan-2022 to 18-Jan-2022: John
+
+Production Team:
+John (Head of Team)

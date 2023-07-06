@@ -1,0 +1,57 @@
+Commands: 
+=========
+"hire"
+"setupTeam"
+"listEmployees"
+"listTeams"
+"startNewDay"
+"takeLeave"
+"listLeaves"
+"addTeamMember"
+"listTeamMembers"
+"listRoles"
+"undo"
+"redo"
+
+Heading and listing
+===================
+"%s (Entitled Annual Leaves: %d days)\n"
+"%-30s%-10s%-13s\n", "Team Name", "Leader", "Setup Date"
+
+
+Exception Handling
+==================
+"Insufficient command arguments!"
+"Employee already exists!"
+
+"Team already exists!"
+"Employee not found!"
+"Employee (___) not found for ___!"
+"Team not found!"
+"Leave overlapped: The leave period ___ is found!"
+"Wrong Date. Leave start date must not be earlier than the system date (___)!"
+
+"Insufficient balance of annual leaves. ___ days left only!"
+"Insufficient balance of sick leaves. ___ days left only!"
+
+"To apply annual leave for 7 days or more, please use the Block Leave (BL) type."
+"To apply annual leave for 6 days or less, you should use the normal Annual Leave (AL) type."
+
+"The annual leave is invalid.        
+The current balance is ___ days only. 
+The employee has not taken any block leave yet.
+The employee can take at most ___ days of non-block annual leave
+because of the need to reserve 7 days for a block leave."
+
+"Cannot take leave.  ___ is the acting head of ___ during ___!"
+"Missing input:  Please give the name of the acting head for ___"
+"___ is on leave during ___!"
+
+Others
+======
+"Please input the file pathname: "
+"Unknown command"
+"No leave record"
+"(Head of Team)"
+"No role"
+" (Head of Team)"

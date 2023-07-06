@@ -1,0 +1,47 @@
+Please input the file pathname: 3_a2.txt
+
+> startNewDay|01-Jan-2022
+
+> hire|Joy|30
+Done.
+
+> hire|Carol|20
+Done.
+
+> takeLeave|Joy|BL|12-Feb-2022|18-Feb-2022
+Done.
+
+> takeLeave|Carol|AL|03-Jan-2022|08-Jan-2022       
+Done.
+
+> listLeaves
+Carol:
+3-Jan-2022 to 8-Jan-2022 [AL]
+Joy:
+12-Feb-2022 to 18-Feb-2022 [BL]
+
+> takeLeave|Carol|SL|02-Mar-2022|09-Mar-2022       
+Done.
+
+> takeLeave|Joy|NL|31-Jan-2022|03-Feb-2022
+Done.
+
+> listLeaves
+Carol:
+3-Jan-2022 to 8-Jan-2022 [AL]
+2-Mar-2022 to 9-Mar-2022 [SL]
+Joy:
+31-Jan-2022 to 3-Feb-2022 [NL]
+12-Feb-2022 to 18-Feb-2022 [BL]
+
+> takeLeave|Carol|BL|28-Mar-2022|05-Apr-2022       
+Done.
+
+> listLeaves
+Carol:
+3-Jan-2022 to 8-Jan-2022 [AL]
+2-Mar-2022 to 9-Mar-2022 [SL]
+28-Mar-2022 to 5-Apr-2022 [BL]
+Joy:
+31-Jan-2022 to 3-Feb-2022 [NL]
+12-Feb-2022 to 18-Feb-2022 [BL]
